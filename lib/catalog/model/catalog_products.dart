@@ -9,17 +9,18 @@ class CatalogProduct extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
       child: ListView.builder(
-          itemCount: Product.products.length,
-          itemBuilder: (BuildContext context, index) {
-            return CatalogProductCard(
-              index: index,
-              catalogBloc: CatalogBloc(),
-              product: Product(
-                  name: Product.products[index].name,
-                  price: Product.products[index].price,
-                  imageUrl: Product.products[index].imageUrl),
-            );
-          }),
+        itemCount: Product.products.length,
+        itemBuilder: (BuildContext context, index) {
+          return CatalogProductCard(
+            index: index,
+            catalogBloc: CatalogBloc(),
+            product: Product(
+                name: Product.products[index].name,
+                price: Product.products[index].price,
+                imageUrl: Product.products[index].imageUrl),
+          );
+        },
+      ),
     );
   }
 }
@@ -28,7 +29,7 @@ class CatalogProductCard extends StatelessWidget {
   final int index;
   final Product product;
   final CatalogBloc catalogBloc;
-  CatalogProductCard(
+  const CatalogProductCard(
       {super.key,
       required this.index,
       required this.product,

@@ -30,6 +30,9 @@ class _CataLogState extends State<CataLog> {
         if (state is CatalogClickedCartState) {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => Cart()));
+        } else if (state is CatalogClickedAddState) {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text('Item Carted')));
         }
       },
       builder: (context, state) {

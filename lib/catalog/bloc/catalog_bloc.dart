@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter_bloc_provider_custom12/data/cart_items.dart';
 import 'package:meta/meta.dart';
 
+import '../../cart/data/cart_items.dart';
 import '../model/products_data_model.dart';
 
 part 'catalog_event.dart';
