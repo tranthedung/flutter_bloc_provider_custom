@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
+import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 import '../../cart/data/cart_items.dart';
@@ -34,5 +35,6 @@ class CatalogBloc extends Bloc<CatalogEvent, CatalogState> {
       CatalogClickButtonCartEvent event, Emitter<CatalogState> emit) {
     print('Button Cart is Clicked');
     emit(CatalogClickedCartState());
+    
   }
 }

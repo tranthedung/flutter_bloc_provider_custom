@@ -9,6 +9,5 @@ class CartInitial extends CartState {}
 
 class CartSuccessState extends CartState {
   final List<Product> cartItems;
-
   CartSuccessState({required this.cartItems});
 }

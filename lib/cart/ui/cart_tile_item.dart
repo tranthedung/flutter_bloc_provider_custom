@@ -5,7 +5,8 @@ import 'package:flutter_bloc_provider_custom12/catalog/model/products_data_model
 class CartTileWidget extends StatelessWidget {
   final Product product;
   final CartBloc cartBloc;
-  const CartTileWidget({super.key, required this.product, required this.cartBloc});
+  const CartTileWidget(
+      {super.key, required this.product, required this.cartBloc});
 
   @override
   Widget build(BuildContext context) {
@@ -24,15 +25,16 @@ class CartTileWidget extends StatelessWidget {
           Expanded(child: Container()),
           IconButton(
             onPressed: () {
+              cartBloc.add(CartRemoveFromCartEvent(product: product));
             },
             icon: Icon(Icons.remove),
           ),
-          Text(product.price.toString()),
-          IconButton(
-              onPressed: () {
+          // Text(product.price.toString()),
+          // IconButton(
+          //     onPressed: () {
 
-              },
-              icon: Icon(Icons.add_circle)),
+          //     },
+          //     icon: Icon(Icons.add_circle)),
         ],
       ),
     );
