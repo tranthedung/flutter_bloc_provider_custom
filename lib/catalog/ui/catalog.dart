@@ -3,7 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_provider_custom12/catalog/bloc/catalog_bloc.dart';
 
 import '../../cart/ui/cart.dart';
-import '../model/catalog_products.dart';
+import 'catalog_products.dart';
+
 
 class CataLog extends StatefulWidget {
   const CataLog({super.key});

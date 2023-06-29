@@ -66,6 +66,12 @@ class CatalogProductCard extends StatelessWidget {
             onPressed: () {
               catalogBloc
                   .add(CatalogClickButtonAddEvent(clickedProduct: product));
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Added item'),
+                  duration: Duration(seconds: 1),
+                ),
+              );
             },
             icon: Icon(Icons.add_shopping_cart),
           ),

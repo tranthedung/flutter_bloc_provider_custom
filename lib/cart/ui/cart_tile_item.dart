@@ -26,6 +26,12 @@ class CartTileWidget extends StatelessWidget {
           IconButton(
             onPressed: () {
               cartBloc.add(CartRemoveFromCartEvent(product: product));
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Remove items'),
+                  duration: Duration(seconds: 1),
+                ),
+              );
             },
             icon: Icon(Icons.remove),
           ),
