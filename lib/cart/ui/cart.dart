@@ -62,7 +62,7 @@ class _CartState extends State<Cart> {
                   SizedBox(height: 30,),
                   Container(
                     child: CartTotal(),
-                  )
+                  ),
                 ],
               );
             default:

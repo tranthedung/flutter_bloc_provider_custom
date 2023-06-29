@@ -25,4 +25,5 @@ class Product {
     Product(name: 'Automata', price: 2.99, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhD-lFsIZGaq12JhkaZcCsNLkQ_BuNN9L1uVZ0zqTxNMXPhvjNo2qazRbkL3ulK1WZiM&usqp=CAU'),
     Product(name: 'Currying', price: 2.99, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa7CJijUGngGQ5rbqGpTfKt3oHaqj5aPgqxzF69B4wSHQqghNJVPUIDmYl4Ls4IRYEoIU&usqp=CAU'),
   ];
+  
 }

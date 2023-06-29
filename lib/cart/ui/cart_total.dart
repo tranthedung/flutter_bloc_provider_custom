@@ -4,12 +4,14 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc_provider_custom12/cart/data/cart_items.dart';
 import 'package:flutter_bloc_provider_custom12/catalog/model/products_data_model.dart';
 
+
 class CartTotal extends StatelessWidget {
- 
+
 
   CartTotal({super.key});
 
-  double x = cartItems.length * 2.9;
+  double x = calculateTotalPrice(cartItems);
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -28,7 +30,7 @@ class CartTotal extends StatelessWidget {
               width: 5,
             ),
             Text(
-              '\$ $x',
+              '\$ ${x.toStringAsFixed(2)}',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
