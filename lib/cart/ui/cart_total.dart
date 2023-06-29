@@ -1,10 +1,15 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_bloc_provider_custom12/cart/data/cart_items.dart';
+import 'package:flutter_bloc_provider_custom12/catalog/model/products_data_model.dart';
 
 class CartTotal extends StatelessWidget {
-  const CartTotal({super.key});
+ 
 
+  CartTotal({super.key});
+
+  double x = cartItems.length * 2.9;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -23,7 +28,7 @@ class CartTotal extends StatelessWidget {
               width: 5,
             ),
             Text(
-              '\$ dang tinh tien',
+              '\$ $x',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,

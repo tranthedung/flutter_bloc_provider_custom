@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_provider_custom12/cart/bloc/cart_bloc.dart';
 import 'package:flutter_bloc_provider_custom12/cart/ui/cart_tile_item.dart';
 import 'package:flutter_bloc_provider_custom12/cart/ui/cart_total.dart';
+import 'package:flutter_bloc_provider_custom12/catalog/model/products_data_model.dart';
 
 class Cart extends StatefulWidget {
   const Cart({super.key});
